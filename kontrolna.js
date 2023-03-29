@@ -85,3 +85,5 @@ function najkraci() {
     }
     console.log(kljuc);
 }
+
+najkraci();
