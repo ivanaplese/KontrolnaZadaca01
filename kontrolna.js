@@ -7,7 +7,7 @@ function ispis_brojeva() {
         console.log(i);
     }
 }
-// ispis_brojeva();
+//ispis_brojeva();
 
 //2.
 //Napisi funkciju koja koristi switch selekciju za pretvaranje numerickog unosa u dan u tjednu. Za neispravan unos ispisi prikladnu poruku.
@@ -43,7 +43,7 @@ function promjena(broj) {
 
     }
 }
-// promjena(8);
+//promjena(8);
 
 //3
 //Napisi funkciju koja okrece uneseni string i broji charactere ne uzimajuci u obzir prazna mjesta (eng. whitespaces)
@@ -59,7 +59,7 @@ function okretanje(string1) {
     }
     console.log(string2, ",", brojac);
 }
-//okretanje("Okreni ovu recenicu");
+//okretanje("Pisanje zadataka nije jednostavan posao");
 
 //4 
 //Napisi funkciju koja vraca najkraci kljuc u danom objektu
@@ -69,9 +69,19 @@ const somePeople = {
     Ada: "Lovelace",
     Kent: "Beck",
     Martin: "Fowler",
-    Erich: "Gamma"
+    Erich: "Gamma",
 }
 //INPUT: somePeople
 //OUTPUT: "Ada"
 
-
+function najkraci() {
+    kljuc = [];
+    brojac = 0;
+    for (let i = 0; i < somePeople.length; i++) {
+        if (somePeople[i].length > brojac) {
+            brojac++;
+            kljuc += somePeople[i];
+        }
+    }
+    console.log(kljuc);
+}
