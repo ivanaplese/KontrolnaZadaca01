@@ -130,6 +130,15 @@ const someEvents = [
 //INPUT: (someEvents, 1992)
 //OUTPUT: [{eventName: "Izasao je Python", eventYear: 1991}, {eventName: "Izasao je C++", eventYear: 1985}]
 
-for (let i = 0; i < someEvents.length; i++) {
-
+function OdredenaGodina(godina) {
+    for (let i = 0; i < someEvents.length; i++) {
+        if (someEvents[i].eventYear > godina) {
+            someEvents[i].pop();
+        }
+    }
+    console.log(someEvents[i]);
 }
+function OdredenaGodina(1992);
+
+
+
