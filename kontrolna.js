@@ -69,21 +69,67 @@ const somePeople = {
     Ada: "Lovelace",
     Kent: "Beck",
     Martin: "Fowler",
-    Erich: "Gamma",
+    Erich: "Gamma"
 }
+
 //INPUT: somePeople
 //OUTPUT: "Ada"
 
 function najkraci() {
-    kljuc = [];
+    kljuc = "";
     brojac = 0;
     for (let i = 0; i < somePeople.length; i++) {
         if (somePeople[i].length > brojac) {
-            brojac++;
             kljuc += somePeople[i];
+            brojac++;
         }
     }
     console.log(kljuc);
 }
 
 najkraci();
+
+// 5
+//Napisi funkciju u obliku function expressiona koja vraca proste brojeve
+//INPUT: [3, 4, 5, 8, 11]
+//OUTPUT: [3, 5, 11]
+//Napisi funkciju u obliku arrow functiona koja kvadrira i vraca dane inpute
+//INPUT: [2, 4, 6, 0, 1]
+//OUTPUT: [4, 16, 36, 0, 1]
+
+function Kvadrat(number) {
+    return number * number;
+}
+
+console.log(Kvadrat(2));
+
+//6
+//Napisi funkciju koja vraca sve dogadaje koji su se dogodili prije od vrijednosti iz ulaznog parametra
+const someEvents = [
+    {
+        eventName: "Izasla je Java",
+        eventYear: 1995,
+    },
+    {
+        eventName: "Izasao je C#",
+        eventYear: 2000,
+    },
+    {
+        eventName: "Izasao je Python",
+        eventYear: 1991,
+    },
+    {
+        eventName: "Izasao je C++",
+        eventYear: 1985,
+    },
+    {
+        eventName: "Izasao je JavaScript",
+        eventYear: 1995,
+    },
+];
+//INPUT: (someEvents, 1992)
+//OUTPUT: [{eventName: "Izasao je Python", eventYear: 1991}, {eventName: "Izasao je C++", eventYear: 1985}]
+
+for (let i = 0; i < someEvents.length; i++) {
+
+}
