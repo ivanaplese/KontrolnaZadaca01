@@ -4,7 +4,9 @@
 
 function ispis_brojeva() {
     for (let i = 0; i <= 100; i++) {
-        console.log(i);
+        if (i % 2 == 0) {
+            console.log(i);
+        }
     }
 }
 //ispis_brojeva();
@@ -43,7 +45,7 @@ function promjena(broj) {
 
     }
 }
-//promjena(8);
+//promjena(1);
 
 //3
 //Napisi funkciju koja okrece uneseni string i broji charactere ne uzimajuci u obzir prazna mjesta (eng. whitespaces)
@@ -87,7 +89,7 @@ function najkraci() {
     console.log(kljuc);
 }
 
-najkraci();
+//najkraci();
 
 // 5
 //Napisi funkciju u obliku function expressiona koja vraca proste brojeve
@@ -101,7 +103,7 @@ function Kvadrat(number) {
     return number * number;
 }
 
-console.log(Kvadrat(2));
+//console.log(Kvadrat(2));
 
 //6
 //Napisi funkciju koja vraca sve dogadaje koji su se dogodili prije od vrijednosti iz ulaznog parametra
@@ -130,15 +132,15 @@ const someEvents = [
 //INPUT: (someEvents, 1992)
 //OUTPUT: [{eventName: "Izasao je Python", eventYear: 1991}, {eventName: "Izasao je C++", eventYear: 1985}]
 
-function OdredenaGodina(godina) {
+function OdredenaGodina(someEvents, godina) {
     for (let i = 0; i < someEvents.length; i++) {
-        if (someEvents[i].eventYear > godina) {
-            someEvents[i].pop();
+        if (someEvents[i].eventYear < godina) {
+            console.log(someEvents[i]);
         }
     }
-    console.log(someEvents[i]);
 }
-function OdredenaGodina(1992);
+
+//OdredenaGodina(someEvents, 1992);
 
 
 
