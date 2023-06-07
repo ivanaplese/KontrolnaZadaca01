@@ -23,6 +23,36 @@
 	</v-container>
 </template>
 
+<template>
+	<v-card class="mx-auto" max-width="344" title="Dodaj studenta">
+		<v-container>
+			<v-text-field v-model="first" color="primary" label="Ime" variant="underlined"></v-text-field>
+
+			<v-text-field v-model="last" color="primary" label="Prezime" variant="underlined"></v-text-field>
+
+			<v-text-field v-model="email" color="primary" label="Broj dolazaka" variant="underlined"></v-text-field>
+
+			<v-text-field v-model="password" color="primary" label="Rezultati prvog kolokvija" placeholder=""
+				variant="underlined"></v-text-field>
+			<v-text-field v-model="email" color="primary" label="Rezultat drugog kolokvija"
+				variant="underlined"></v-text-field>
+			<v-text-field v-model="email" color="primary" label="Kontinuirano pracenje" variant="underlined"></v-text-field>
+
+
+		</v-container>
+
+		<v-divider></v-divider>
+
+		<v-card-actions>
+			<v-spacer></v-spacer>
+
+			<v-btn color="black">
+				Brisi podatke
+				<v-icon icon="mdi-chevron-right" end></v-icon>
+			</v-btn>
+		</v-card-actions>
+	</v-card>
+</template>
 <script>
 export default {
 	name: "prvi-zadatak",
@@ -31,7 +61,7 @@ export default {
 	},
 	watch: {},
 	methods: {
-		ocistiFormu() {},
+		ocistiFormu() { },
 		dodajStudenta() {
 			let noviStudent = {
 				//Dodaj propertyje
