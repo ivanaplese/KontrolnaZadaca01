@@ -45,9 +45,18 @@
 
 		<v-card-actions>
 			<v-spacer></v-spacer>
-
-			<v-btn color="black">
+			<v-btn :disabled="isDisabled" color="success">
 				Brisi podatke
+				<v-icon icon="mdi-chevron-right" end></v-icon>
+			</v-btn>
+
+			<v-btn color="success">
+				Očisti
+				<v-icon icon="mdi-chevron-right" end></v-icon>
+			</v-btn>
+
+			<v-btn color="success">
+				OK
 				<v-icon icon="mdi-chevron-right" end></v-icon>
 			</v-btn>
 		</v-card-actions>
