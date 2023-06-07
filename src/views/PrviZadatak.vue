@@ -26,17 +26,20 @@
 <template>
 	<v-card class="mx-auto" max-width="344" title="Dodaj studenta">
 		<v-container>
-			<v-text-field v-model="first" color="primary" label="Ime" variant="underlined"></v-text-field>
+			<v-text-field v-model="ime" color="primary" label="Ime" variant="underlined"></v-text-field>
 
-			<v-text-field v-model="last" color="primary" label="Prezime" variant="underlined"></v-text-field>
+			<v-text-field v-model="prezime" color="primary" label="Prezime" variant="underlined"></v-text-field>
 
-			<v-text-field v-model="email" color="primary" label="Broj dolazaka" variant="underlined"></v-text-field>
+			<v-text-field v-model="brojDolazaka" color="primary" label="Broj dolazaka" variant="underlined"></v-text-field>
 
-			<v-text-field v-model="password" color="primary" label="Rezultati prvog kolokvija" placeholder=""
+			<v-text-field v-model="prviKolokvij" color="primary" label="Rezultati prvog kolokvija" placeholder=""
 				variant="underlined"></v-text-field>
-			<v-text-field v-model="email" color="primary" label="Rezultat drugog kolokvija"
+
+			<v-text-field v-model="drugiKolokvij" color="primary" label="Rezultat drugog kolokvija"
 				variant="underlined"></v-text-field>
-			<v-text-field v-model="email" color="primary" label="Kontinuirano pracenje" variant="underlined"></v-text-field>
+
+			<v-text-field v-model="kontinuiranoPracenje" color="primary" label="Kontinuirano pracenje"
+				variant="underlined"></v-text-field>
 
 
 		</v-container>
