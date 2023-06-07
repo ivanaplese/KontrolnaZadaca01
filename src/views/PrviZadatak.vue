@@ -32,7 +32,7 @@
 
 			<v-text-field v-model="brojDolazaka" color="primary" label="Broj dolazaka" variant="underlined"></v-text-field>
 
-			<v-text-field v-model="prviKolokvij" color="primary" label="Rezultati prvog kolokvija" placeholder=""
+			<v-text-field v-model="prviKolokvij" color="primary" label="Rezultati prvog kolokvija"
 				variant="underlined"></v-text-field>
 
 			<v-text-field v-model="drugiKolokvij" color="primary" label="Rezultat drugog kolokvija"
